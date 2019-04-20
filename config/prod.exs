@@ -20,7 +20,7 @@ config :nspeck_backend, NspeckBackendWeb.Endpoint,
 # Do not print debug messages in production
 config :logger, level: :info
 
-config :nspeck_backend, NspeckBackendWeb.Repo,
+config :nspeck_backend, NspeckBackend.Repo,
   url: System.get_env("DATABASE_URL"),
   pool_size: String.to_integer(System.get_env("POOL_SIZE") || "10"),
   ssl: true
